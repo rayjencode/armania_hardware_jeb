@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,300;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+   :root {
+      scroll-behavior: smooth;
+   }
+}
+
+body {
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+
+   font-size: 1rem;
+   // font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   background: $gray14;
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,79 @@
+.payment {
+   &__list {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+
+      padding-left: 0;
+      padding-bottom: 4 rem;
+
+      @media (max-width: 1024px) {
+         display: block;
+      }
+
+      @media (max-width: 768px) {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 0;
+      }
+
+      @media (max-width: 414px) {
+         display: block;
+      }
+   }
+
+   &__item {
+      display: flex;
+      //   position: relative;
+
+      border-left: 1px solid $gray9;
+      padding-left: 34px;
+      padding-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      @media (max-width: 768px) {
+         padding-left: 55px;
+      }
+
+      @media (max-width: 414px) {
+         padding-left: 0;
+         border-left: 0;
+      }
+      &:first-child {
+         border-left: none;
+      }
+
+      &--label {
+         padding-left: 24px;
+
+         &--text {
+            width: 153px;
+            margin-top: 0;
+            font-size: 15px;
+            font-weight: 150;
+
+            &--2 {
+               font-size: 14px;
+               font-family: sans-serif;
+               margin-bottom: 0;
+               margin-top: 0;
+            }
+         }
+      }
+   }
+
+   &__icon {
+      //   position: absolute;
+      color: $primary;
+      font-size: 3rem;
+      gap: 2rem;
+      bottom: 1rem;
+      right: 20rem;
+
+      &:hover {
+         transform: scale(1.5);
+      }
+   }
+}

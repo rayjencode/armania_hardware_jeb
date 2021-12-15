@@ -1,0 +1,87 @@
+.discount {
+   &__wrapper {
+      justify-content: space-between;
+      display: flex;
+      grid-template-columns: 1fr 1fr;
+      display: grid;
+      margin-bottom: 66px;
+      gap: 2rem;
+
+      @media (max-width: 768px) {
+         grid-template-columns: 1fr;
+         display: block;
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+   }
+
+   &__item {
+      padding-top: 2.5rem;
+      padding-left: 2rem;
+
+      @media (max-width: 414px) {
+         background-position: 50% 100%;
+      }
+
+      &:first-child {
+         background-image: url(../img/disc-1.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+      &:last-child {
+         background-image: url(../img/disc-2.jpg);
+      }
+
+      &--heading {
+         font-size: 28px;
+         font-family: sans-serif;
+         font-weight: 700;
+
+         &--text {
+            width: 184px;
+            line-height: 32px;
+            color: #333333;
+         }
+      }
+
+      &--subheading {
+         font-size: 15px;
+         font-family: sans-serif;
+         width: 182px;
+      }
+
+      span {
+         color: #333333;
+         text-decoration: underline;
+         cursor: pointer none;
+      }
+
+      &--text {
+         display: flex;
+         gap: 1rem;
+         margin-top: 46px;
+         place-items: center;
+
+         &--label {
+            cursor: pointer;
+
+            &:hover {
+               text-decoration: underline;
+               color: $primary;
+            }
+         }
+      }
+
+      &--icon {
+         background-color: #ffd333;
+         color: #fff;
+         width: 25px;
+         height: 25px;
+         border-radius: 50px;
+         display: grid;
+         font-weight: 600;
+         cursor: pointer;
+         place-items: center;
+      }
+   }
+}

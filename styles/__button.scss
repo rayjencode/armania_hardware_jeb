@@ -1,0 +1,33 @@
+.btn {
+   border: none;
+   padding: 1rem 2rem;
+   font-size: 15px;
+   font-family: sans-serif;
+
+   // @media (max-width: 768px) {
+   //    font-size: 10px;
+   //    height: 41px;
+   // }
+
+   // @media (max-width: 414px) {
+   //    position: absolute;
+   //    top: 244px;
+   //    left: 63px;
+   // }
+
+   // @media (max-width: 375px) {
+   //    position: absolute;
+   //    top: 288px;
+   //    left: 55px;
+   // }
+
+   &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+   }
+}
+
+.btn-primary {
+   background-color: $primary;
+   font-weight: 600;
+}

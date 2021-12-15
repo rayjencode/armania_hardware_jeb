@@ -1,0 +1,52 @@
+.icon {
+   margin-top: 9rem;
+   &__wrapper {
+   }
+
+   &__list {
+      margin-top: 0;
+      display: flex;
+      list-style: none;
+
+      padding-left: 0;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+         gap: 2rem;
+      }
+
+      @media (max-width: 414px) {
+         padding-left: 2rem;
+         padding-right: 2rem;
+         padding-top: 2rem;
+      }
+   }
+
+   &__item {
+      opacity: 0.3;
+
+      @media (max-width: 768px) {
+         &:last-child {
+            display: none;
+         }
+
+         &:nth-child(5) {
+            display: none;
+         }
+      }
+
+      @media (max-width: 414px) {
+         &:nth-child(4) {
+            display: none;
+         }
+
+         &:nth-child(3) {
+            display: none;
+         }
+      }
+      &:hover {
+         opacity: 1;
+         cursor: pointer;
+      }
+   }
+}
